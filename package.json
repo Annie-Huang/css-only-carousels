@@ -1,0 +1,21 @@
+{
+  "name": "css-only-carousels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annie-Huang/css-only-carousels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Annie-Huang/css-only-carousels/issues"
+  },
+  "homepage": "https://github.com/Annie-Huang/css-only-carousels#readme",
+  "description": ""
+}
