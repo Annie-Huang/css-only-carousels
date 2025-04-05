@@ -1,0 +1,9 @@
+Learning how CSS-only carousels are going to work (https://www.youtube.com/watch?v=g03Yldh9Nkw)
+
+https://developer.chrome.com/blog/carousels-with-css
+
+https://codepen.io/kevinpowell/pen/qEBJBxe
+https://github.com/Annie-Huang/css-only-carousels
+
+----------------------------------------------------------------------------
+
