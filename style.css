@@ -22,11 +22,10 @@ html {
 
   scroll-marker-group: after;
   &::scroll-marker-group {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
-    background: purple;
   }
 
   > li {
@@ -36,12 +35,14 @@ html {
   > li::scroll-marker {
     content: ' ';
     width: 20px;
-    aspect-ratio: 1;
+    /*aspect-ratio: 1;*/ /* not working, not sure why */
+    height: 20px;
     border-radius: 100%;
-    border: 1px solid Canvas;
+    border: 2px solid CanvasText;
 
+    /* Can use keyboard left and right to navigate the scroll-marker. and able to do it in circular way */
     &:target-current {
-      background: green;
+      background: CanvasText;
     }
   }
 
