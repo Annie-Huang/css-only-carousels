@@ -16,13 +16,30 @@ html {
   grid-auto-columns: 40%;
 
   overflow-x: auto;
-
   scroll-snap-type: x mandatory;
 
   anchor-name: --carousel;
 
+  scroll-marker-group: after;
+  &::scroll-marker-group {
+    display: grid;
+    padding: 1rem;
+    background: purple;
+  }
+
   > li {
     scroll-snap-align: center;
+  }
+
+  > li::scroll-marker {
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    background: green;
+
+    &:target-current {
+      background: var(--accent);
+    }
   }
 
   &::scroll-button(*) {
