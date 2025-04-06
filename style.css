@@ -13,7 +13,9 @@ html {
   display: grid;
   gap: 2rem;
   grid-auto-flow: column;
-  grid-auto-columns: 40%;
+  /* Increase the value grid-auto-columns to a larger number seems to be able to get jump one marker by one marker instead of jumping several markers */
+  /*grid-auto-columns: 40%;*/
+  grid-auto-columns: 80%;
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
