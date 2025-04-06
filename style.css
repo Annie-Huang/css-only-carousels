@@ -39,11 +39,17 @@ html {
     height: 20px;
     border-radius: 100%;
     border: 2px solid CanvasText;
+  }
 
-    /* Can use keyboard left and right to navigate the scroll-marker. and able to do it in circular way */
-    &:target-current {
-      background: CanvasText;
-    }
+  /* Can use keyboard left and right to navigate the scroll-marker. and able to do it in circular way */
+  /* Keep in mind that you cannot do nesting with sudo element, you cannot do:
+     > li::scroll-marker {
+       &:target-current{...}
+     }
+     sudo element will have to continue to list out like before.
+  */
+  > li::scroll-marker:target-current {
+    background: CanvasText;
   }
 
   &::scroll-button(*) {
