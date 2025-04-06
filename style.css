@@ -22,4 +22,15 @@ html {
   > li {
     scroll-snap-align: center;
   }
+
+  &::scroll-button(*) {
+    background: purple;
+  }
+
+  &::scroll-button(right) {
+    content: 'Right';
+  }
+  &::scroll-button(left) {
+    content: 'Left';
+  }
 }
