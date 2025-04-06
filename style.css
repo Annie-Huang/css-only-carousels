@@ -19,18 +19,23 @@ html {
 
   scroll-snap-type: x mandatory;
 
+  anchor-name: --carousel;
+
   > li {
     scroll-snap-align: center;
   }
 
   &::scroll-button(*) {
-    background: purple;
+    position: fixed;
+    position-anchor: --carousel;
   }
 
   &::scroll-button(right) {
     content: 'Right';
+    position-area: center right;
   }
   &::scroll-button(left) {
     content: 'Left';
+    position-area: center left;
   }
 }
