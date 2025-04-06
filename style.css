@@ -28,10 +28,17 @@ html {
   &::scroll-button(*) {
     position: fixed;
     position-anchor: --carousel;
+    margin: 1rem;
+    font: inherit;
+    background: dodgerblue;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
   }
 
   &::scroll-button(right) {
     content: 'Right';
+    /* https://developer.chrome.com/docs/css-ui/anchor-positioning-api */
     position-area: center right;
   }
   &::scroll-button(left) {
