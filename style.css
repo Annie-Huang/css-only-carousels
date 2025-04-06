@@ -18,6 +18,11 @@ html {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 
+  /* force animation */
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+
   anchor-name: --carousel;
 
   scroll-marker-group: after;
