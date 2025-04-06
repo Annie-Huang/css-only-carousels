@@ -23,6 +23,8 @@ html {
   scroll-marker-group: after;
   &::scroll-marker-group {
     display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
     padding: 1rem;
     background: purple;
   }
@@ -33,12 +35,13 @@ html {
 
   > li::scroll-marker {
     content: ' ';
-    width: 100px;
-    height: 100px;
-    background: green;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 1px solid Canvas;
 
     &:target-current {
-      background: var(--accent);
+      background: green;
     }
   }
 
