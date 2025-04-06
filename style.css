@@ -40,6 +40,12 @@ html {
       border: 2px solid CanvasText;
     }
 
+    /* Just to show you that you can do it, but don't need to do this...*/
+    &::scroll-marker:hover,
+    &::scroll-marker:focus-visible {
+      border: 10px solid red;
+    }
+
     /* Can use keyboard left and right to navigate the scroll-marker. and able to do it in circular way */
     /* Keep in mind that you cannot do nesting with sudo element, you cannot do:
        > li
